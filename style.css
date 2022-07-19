@@ -1,0 +1,88 @@
+:root {
+    --color-primary: #fff;
+    --color-heading: #233C7B;
+    --color-text: #02050B;
+    --color-accent: #454545;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ---------------------------
+    Typography or Basic Styles
+----------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    line-height: 8rem;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    color: var(--color-primary);
+    line-height: 2.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------------
+        Banner Style
+------------------------ */
+.banner {
+    max-width: 1321px;
+    height: 646px;
+    margin: 2% auto;
+    padding: 0 8rem;
+    border-radius: 30px;
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn {
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    background-color: #d00;
+    display: inline-block;
+}
+
+/* .banner-content .link-btn::after {
+    content: ">";
+    display: inline-flex;
+    font-size: 3rem;
+    position: relative;
+    top: 5px;
+    left: 10px;
+} */
+
+.banner-image img {
+    width: 100%;
+    position: relative;
+    top: 3.5rem;
+    left: 2.5rem;
+}
