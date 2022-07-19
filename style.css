@@ -69,16 +69,19 @@ a {
     border-radius: 5px;
     background-color: #d00;
     display: inline-block;
+    transition: background 0.4s, border 0.4s, color 0.4s;
+    border: 2px solid transparent;
 }
 
-/* .banner-content .link-btn::after {
-    content: ">";
-    display: inline-flex;
-    font-size: 3rem;
-    position: relative;
-    top: 5px;
-    left: 10px;
-} */
+.link-btn:hover {
+    border: 2px solid #d00;
+    background-color: #fff;
+    color: #d00;
+}
+
+.fa-solid {
+    padding-left: 1.5rem;
+}
 
 .banner-image img {
     width: 100%;
