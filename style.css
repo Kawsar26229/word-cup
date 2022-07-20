@@ -60,6 +60,11 @@ a {
     text-decoration: none;
 }
 
+.list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
 /* ---------------------
         Banner Style
 ------------------------ */
@@ -130,7 +135,6 @@ a {
     flex-direction: column;
     height: inherit;
     justify-content: space-evenly;
-    list-style-type: none;
 }
 
 .nav-item {
@@ -246,16 +250,32 @@ a {
     justify-content: space-between;
 }
 
-.list-item > a {
+.social-icons {
+    width: 15%;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+}
+
+.list-item > a,
+.icon-item > a {
     font-size: 1.6rem;
     font-weight: 500;
     color: #B9B9B9;
     transition: color 0.2s;
 }
 
-.list-item > a:hover {
+.list-item > a:hover,
+.icon-item>a:hover {
     color: var(--color-primary);
 }
+
 
 /* ---------------
     Matches Styles
